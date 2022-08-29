@@ -2,7 +2,7 @@
   "name": "tsc",
   "version": "0.1.0",
   "description": "An example project on how to set up and write custom logic in TypeScript for Nakama server.",
-  "main": "./es6/main.js",
+  "main": "./build/es6/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -8,7 +8,7 @@
     "target": "ES6",
     "module": "ES6",
     "strict": false,
-    "outDir": "./build/es6/"
+    "outDir": "build/es6/"
   },
   "files": [
     "./node_modules/nakama-runtime/index.d.ts",
@@ -19,7 +19,7 @@
     "./daily_reward.ts",
     "./checkturn.ts"
   ],
-  "outFile": "./es6/index.js",
+  "outFile": "build/index.js",
   "typeRoots": [
     "./node_modules"
   ],
