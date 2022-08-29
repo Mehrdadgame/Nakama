@@ -13,8 +13,17 @@
 // limitations under the License.
 
 
-let InitModule: nkruntime.InitModule =
-        function(ctx: nkruntime.Context, logger: nkruntime.Logger, nk: nkruntime.Nakama, initializer: nkruntime.Initializer) {
-    initializer.registerRpc('tset',InitTest);
-    logger.info("Hello World!");
-}
+let InitModule: nkruntime.InitModule = function (ctx: nkruntime.Context, logger: nkruntime.Logger, nk: nkruntime.Nakama, initializer: nkruntime.Initializer) {
+    // ...
+    initializer.registerRpc("ChannelMessageSend", serverRpc);
+    initializer.registerRpc("turnMessageSend",rtBeturnMessageSend);
+    initializer.registerMatch(moduleName, {
+      matchInit,
+      matchJoinAttempt,
+      matchJoin,
+      matchLeave,
+      matchLoop,
+      matchTerminate,
+      matchSignal,
+  });
+  }
