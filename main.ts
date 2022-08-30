@@ -17,6 +17,8 @@ let InitModule: nkruntime.InitModule = function (ctx: nkruntime.Context, logger:
     // ...
     initializer.registerRpc("ChannelMessageSend", serverRpc);
     initializer.registerRpc("turnMessageSend",rtBeturnMessageSend);
+    initializer.registerRpc("test",serverRpc);
+    logger.debug("RrrRR");
     initializer.registerMatch(moduleName, {
       matchInit,
       matchJoinAttempt,
