@@ -27,7 +27,7 @@ services:
       - cockroachdb
       - prometheus
     volumes:
-      - /c/Users/pc/Nakama_Dice/nakama/docker:/nakama/data.
+      - ./data:/nakama/data
     expose:
       - "7349"
       - "7350"
